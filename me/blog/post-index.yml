@@ -1,0 +1,44 @@
+- title: Hello World
+  slug: hello-world
+  file: hello-world.md
+  date: 2014-06-07 17:54
+  description: first horrible post
+  tags: 
+    - blog
+    - me
+    - vim
+    
+- title: Highlight.js Pull Request
+  slug: highlight-pullrequest
+  file: highlight-pullrequest.md
+  date: 2014-06-09 11:22
+  description: A pull request to highlight.js and plans about pull requests in general
+  tags: 
+    - highlight.js
+    - pull request
+    - blog
+
+- title: Leader Key
+  slug: leader-key
+  file: leader-key.md
+  date: 2014-06-18 00:38
+  description: Leader key as spacebar and why I use it for everything
+  tags: 
+    - vim
+
+- title: "Vim: filter list by list"
+  slug: vim-filter-list-by-list
+  file: vim-filter-list-by-list.md
+  date: 2014-07-06 01:41
+  description: How to filter a list by a list in vim
+  tags:
+    - vim
+    - pull request
+
+- title: Using Ex mode as a REPL for vimscript
+  slug: using-ex-mode-as-a-repl-for-vimscript
+  file: exmode-repl.md
+  date: 2014-08-24 01:08
+  description: Finally found a use for Ex mode in vim! it still counts right?
+  tags: 
+    - vim

@@ -1,0 +1,39 @@
+html, body {font-family: "ff-tisa-web-pro"; font-size: 14px; line-height: 20px;}
+html, body {margin: 0; height:100%;  min-width: 400px;}
+
+h1, h2, h3, h4, h5, h6 {margin-bottom: 1em; font-weight: 500; line-height: 1.1;
+                        margin-top: 10px;}
+h1, h2, h3 {font-family: "ff-enzo-web"; color: #014673; margin-top: 20px;}
+h4, h5, h6 {font-family: "ff-tisa-web-pro";}
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+a {text-decoration: none; color: #014673;}
+a:hover {text-decoration: underline; color: #0171AD;}
+
+.float-left {float: left;}
+.float-right {float: right;}
+.clear-both {clear: both;}
+
+.tooltip {white-space: nowrap; font-family: "ff-enzo-web"; }
+
+.footer > .container, .content > .container {max-width: 690px; margin:0 auto; padding: 0 15px;}
+
+.content { margin-bottom: 20px; padding: 60px 0 60px 0;}
+
+.footer {position: fixed; bottom: 0; left: 0; right: 0; height: 20px; background: #014673; color: #FFF; }
+.footer a {color: #FFF; font-family: 'FF-ENZO-WEB'; margin-right: 5px }
+
+h6.info {margin-bottom: 0; font-family: 'FF-ENZO-WEB';}
+code {display: inline-block; background: #1d1f21; color: #fff; font-size: 80%;
+      line-height:16px;}
+code.hljs {display: block; overflow: auto; padding: 1em; margin: 0 auto; font-size: 90%;}
+p {margin: 0 0 10px;}
+pre {border: 0; padding: 0;}
+
+.post-index-title {margin: 10px 0 10px 0;}
+.post-index-description {padding-bottom: 20px;}

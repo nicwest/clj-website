@@ -1,0 +1,33 @@
+- basics:
+  - name: Nic West
+    label: Web Developer
+    email: nicwest.cb+cv@gmail.com
+    website: http://nic-west.com
+    summary: >
+      I'm a most-of-stack web developer with thirst for writing terrible code.
+      I'm acutely aware of how little I contribute to the Open Source community
+      and this is something I'm looking to remedy. I have three and bit years
+      of B2B startup experience in the publishing sector, and I'm currently
+      employed at Leto Lab LTD in London as junior web developer.
+    location: 
+      - city: London
+        countryCode: UK
+    profiles:
+      - network: twitter
+        username: west_nic
+        url: https://twitter.com/west_nic
+      - network: github
+        username: nicwest
+        url: https://github.com/nicwest
+- work:
+  - company: Leto Lab LTD
+    position: Junior Web Developer
+    website: https://weareleto.com
+    startDate: 2014-03-10
+    summary: >
+      Leto provides a startups-as-a-service to businesses in east London's tech
+      center. Leto projects are skill diverse and fast paced, not to mention
+      exciting!
+    highlights:
+      - Large exposure to production python
+      - Nipple deep in the startup community
