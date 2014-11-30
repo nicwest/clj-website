@@ -5,12 +5,14 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
                  [hiccup "1.0.5"]
-                 [markdown-clj "0.9.57" :exclusions [org.clojure/clojure]]
+                 [markdown-clj "0.9.57"]
                  [clj-yaml "0.4.0"]
-                 [ring/ring-defaults "0.1.2"]]
-  :plugins [[lein-ring "0.8.13"]]
+                 [ring/ring-defaults "0.1.2"]
+                 [environ "1.0.0"]]
+  :plugins [[lein-ring "0.8.13"]
+            [lein-environ "1.0.0"]]
   :ring {:handler clj-website.core.handler/app}
-  :profiles
-  :uberjar-name "clj-website-standalone.jar"
-  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                        [ring-mock "0.1.5"]]}})
+  :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                        [ring-mock "0.1.5"]]}
+             :production {:env {:production true}}}
+  :uberjar-name "clj-website-standalone.jar")
