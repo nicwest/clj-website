@@ -42,3 +42,12 @@
   description: Finally found a use for Ex mode in vim! it still counts right?
   tags: 
     - vim
+
+- title: Clojure, and Blog Re-write
+  slug: clojure-blog
+  file: clojure-blog.md
+  date: 2014-11-30 21:21
+  description: I've started learning a new language, and have replaced terrible python website with terrible clojure website
+  tags: 
+    - blog
+    - clojure
