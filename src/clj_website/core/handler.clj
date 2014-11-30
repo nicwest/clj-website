@@ -1,4 +1,5 @@
 (ns clj-website.core.handler
+  (:use ring.util.response)
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
@@ -8,6 +9,8 @@
 (defroutes app-routes
   (GET "/" [] (blog/index))
   (GET "/feed.atom" [] rss/feed)
+  (GET "/favicon.ico" [] (resource-response
+                           "images/favicon.ico" {:root "public"}))
   (GET "/tags" [] (blog/tags))
   (GET "/tags/:tag" [tag] (blog/tag tag))
   (GET "/:slug" [slug] (blog/post slug))
