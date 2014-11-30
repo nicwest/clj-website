@@ -11,5 +11,6 @@
   :plugins [[lein-ring "0.8.13"]]
   :ring {:handler clj-website.core.handler/app}
   :profiles
+  :uberjar-name "clj-website-standalone.jar"
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]]}})
