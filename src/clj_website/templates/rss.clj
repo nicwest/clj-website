@@ -3,11 +3,12 @@
             [clj-website.core.posts :as posts])
   (:use [hiccup.core :only (html)]
         [hiccup.page :only (xml-declaration)]
-        [clj-website.views.blog :only (read-post-as-html)]))
+        [clj-website.views.blog :only (read-post-as-html)]
+        [clojure.string :only (replace-first)]))
 
 (defn format-timestamp
   [timestamp]
-  (str "2014-11-16T18:30:00Z"))
+  (str (replace-first timestamp #"\s" "T") ":00Z"))
 
 (defn feed-item
   [post]

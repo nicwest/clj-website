@@ -5,7 +5,7 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
                  [hiccup "1.0.5"]
-                 [markdown-clj "0.9.57"]
+                 [markdown-clj "0.9.57" :exclusions [org.clojure/clojure]]
                  [clj-yaml "0.4.0"]
                  [ring/ring-defaults "0.1.2"]
                  [environ "1.0.0"]]
