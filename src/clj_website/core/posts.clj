@@ -18,3 +18,10 @@
 (defn get-file
   [post]
   (str "me/blog/posts/" (:file post)))
+
+(defn filter-by-tag
+  [tag]
+  (filter 
+    (fn [x] 
+      (some #(= tag %) (:tags x)))
+    post-index)) 

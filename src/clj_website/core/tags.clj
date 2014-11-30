@@ -1,5 +1,6 @@
 (ns clj-website.core.tags
-  (:require [clj-yaml.core :as yaml]))
+  (:require [clj-yaml.core :as yaml]
+            [clj-website.core.posts :as posts]))
 
 (defn process-important-tags
   [& tag-files]
@@ -17,3 +18,12 @@
 (defn important?
   [tag]
   (some #(= tag %) important))
+
+(def all
+  (reduce 
+    (fn 
+      [tags post]
+      (let [post-tags (:tags post)]
+        (into [] (sort (set (concat tags post-tags))))))
+    []
+    posts/post-index))

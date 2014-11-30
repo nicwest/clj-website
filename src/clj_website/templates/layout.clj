@@ -51,11 +51,11 @@
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
         [:meta {:name "viewport" :content "width=device-width, initial-scale=1, maximum-scale=1"}]
         [:title (if (nil? title) "Nic West" (str "Nic West - " title))]
-        (include-css "css/bootstrap.min.css"
-                     "css/font-awesome.min.css"
-                     "css/font-mfizz.css"
-                     "css/hybrid.css"
-                     "css/base.css")
+        (include-css "/css/bootstrap.min.css"
+                     "/css/font-awesome.min.css"
+                     "/css/font-mfizz.css"
+                     "/css/hybrid.css"
+                     "/css/base.css")
         (apply include-css css)]
        "<!--[if lt IE 9]>"
        (include-js "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"

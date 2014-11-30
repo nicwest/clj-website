@@ -15,7 +15,7 @@
   description: A pull request to highlight.js and plans about pull requests in general
   tags: 
     - highlight.js
-    - pull request
+    - pull-request
     - blog
 
 - title: Leader Key
@@ -33,7 +33,7 @@
   description: How to filter a list by a list in vim
   tags:
     - vim
-    - pull request
+    - pull-request
 
 - title: Using Ex mode as a REPL for vimscript
   slug: using-ex-mode-as-a-repl-for-vimscript

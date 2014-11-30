@@ -9,7 +9,7 @@
     [:h6 {:class "info"}
      [:strong "posts"]
      " | "
-     [:a {:href "/tags"}]]))
+     [:a {:href "/tags"} "tags"]]))
 
 (defn post-header
   [date md-file]

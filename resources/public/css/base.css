@@ -37,3 +37,7 @@ pre {border: 0; padding: 0;}
 
 .post-index-title {margin: 10px 0 10px 0;}
 .post-index-description {padding-bottom: 20px;}
+
+.tag-index { font-family: 'FF-ENZO-WEB';; font-size: 14px; margin-top: 1em;}
+.tag-index a {margin-left: 10px;}
+.tag-index a:first-child {margin-left: 0;}
