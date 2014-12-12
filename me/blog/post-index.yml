@@ -1,3 +1,12 @@
+- title: File Navigation
+  slug: file-navigation
+  file: file-navigation.md
+  date: 2014-11-30 23:58
+  description: Navigating files in vim, something that has been bothering me 
+  tags: 
+    - vim
+    - plugin
+
 - title: Hello World
   slug: hello-world
   file: hello-world.md
