@@ -24,4 +24,6 @@ Here is my current usage pattern:
 13. close vim
 14. GOTO: step 1
 
+It feels somewhat inefficient...
+
 
