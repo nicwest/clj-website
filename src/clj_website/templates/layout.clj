@@ -28,18 +28,29 @@
      [:div {:class "float-left"}
       (tooltip-link "/" "home" {:placement "top"} "Nic West")]
      [:div {:class "float-right"}
-     (tooltip-link "#" "London" {:placement "top"} (fa-icon "map-marker"))
-     (tooltip-link "#" "python<br />vimscript<br />(clojure)" {:placement "top" :html true} (fa-icon "code"))
-     (tooltip-link "http://weareleto.com" "junior web developer" {:placement "top" :target "_blank"} (fa-icon "briefcase"))
-     "|&nbsp;&nbsp;"
-     (tooltip-link "/feed.atom" "feeds" {:placement "top"} (fa-icon "rss"))
-     (tooltip-link "https://twitter.com/west_nic" "@west_nic" {:placement "top" :target "_blank"} (fa-icon "twitter"))
-     (tooltip-link "https://github.com/nicwest" "github" {:placement "top" :target "_blank"} (fa-icon "github"))]
+      (tooltip-link "#" "London" {:placement "top"} (fa-icon "map-marker"))
+      (tooltip-link "#" "python<br />vimscript<br />(clojure)" {:placement "top" :html true} (fa-icon "code"))
+      (tooltip-link "http://weareleto.com" "junior web developer" {:placement "top" :target "_blank"} (fa-icon "briefcase"))
+      "|&nbsp;&nbsp;"
+      (tooltip-link "/feed.atom" "feeds" {:placement "top"} (fa-icon "rss"))
+      (tooltip-link "https://twitter.com/west_nic" "@west_nic" {:placement "top" :target "_blank"} (fa-icon "twitter"))
+      (tooltip-link "https://github.com/nicwest" "github" {:placement "top" :target "_blank"} (fa-icon "github"))]
      [:div {:class "clear-both"}]]))
 
 (defn content
   [& body]
   (html [:div {:class "container"} body])) 
+
+(def google-analytics
+  (html 
+    [:script {:type "text/javascript"}
+     "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-47906997-1', 'auto');
+     ga('send', 'pageview');"]))
 
 (defn common 
   ([title assets & body]
@@ -63,6 +74,7 @@
        "<![endif]-->"
        (include-js "//use.typekit.net/juc4hvt.js")
        [:script {:type "text/javascript"} "try{Typekit.load();}catch(e){}"]
+       google-analytics
        [:body
         [:div {:class "content"} (content body)]
         [:div {:class "footer"} footer]
