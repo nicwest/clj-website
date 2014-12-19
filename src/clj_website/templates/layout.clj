@@ -78,10 +78,10 @@
        [:body
         [:div {:class "content"} (content body)]
         [:div {:class "footer"} footer]
-        (include-js "js/jquery.min.js"
-                    "js/bootstrap.min.js"
-                    "js/bootstrap.enables.js"
-                    "js/highlight.pack.js")
+        (include-js "/js/jquery.min.js"
+                    "/js/bootstrap.min.js"
+                    "/js/bootstrap.enables.js"
+                    "/js/highlight.pack.js")
         [:script {:type "text/javascript"} "hljs.initHighlightingOnLoad();"]
         (apply include-js js)])))
   ([title body]
