@@ -1,3 +1,12 @@
+- title: QQ.vim
+  slug: qq-vim
+  file: qq-vim.md
+  date: 2014-12-23 11:13
+  description: Vim wrapper over curl for REST exploration
+  tags: 
+    - vim
+    - plugin
+
 - title: File Navigation
   slug: file-navigation
   file: file-navigation.md
@@ -5,7 +14,6 @@
   description: Navigating files in vim, something that has been bothering me 
   tags: 
     - vim
-    - plugin
 
 - title: Hello World
   slug: hello-world
